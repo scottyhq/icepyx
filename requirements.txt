@@ -3,5 +3,7 @@ fiona
 geopandas
 h5py
 matplotlib
+nbsphinx
+numpydoc
 numpy
 shapely

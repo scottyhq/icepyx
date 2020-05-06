@@ -6,8 +6,6 @@ with open("README.rst", "r") as f:
 with open("requirements.txt") as f:
     INSTALL_REQUIRES = f.read().strip().split("\n")
 
-PYTHON_REQUIRES = ">=3"
-
 setuptools.setup(
     name="icepyx",
     version="0.0.1",
@@ -20,9 +18,9 @@ setuptools.setup(
     long_description_content_type="text/x-rst",
     url="https://github.com/icesat2py/icepyx.git",
     license="BSD 3-Clause",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude=["*tests"]),
     install_requires=INSTALL_REQUIRES,
-    python_requires=PYTHON_REQUIRES,
+    python_requires=">=3",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: BSD License",

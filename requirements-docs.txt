@@ -1,4 +1,3 @@
 nbsphinx
 numpydoc
-pytest
 -r requirements.txt
